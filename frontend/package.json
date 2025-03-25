@@ -16,7 +16,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server": "node ../backend/server.js",
     "build": "react-scripts build"
   },
   "eslintConfig": {
