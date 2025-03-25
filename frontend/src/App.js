@@ -26,7 +26,7 @@ function App() {
     setIsLoading(true); // 요청 시작 시 로딩 활성화
     setResponseMessage("");
     try {
-      const response = await fetch("http://localhost:5000/api", {
+      const response = await fetch("https://ksat-back.vercel.app/api", {
         method: "POST", // POST 요청
         headers: {
           "Content-Type": "application/json", // JSON 형식으로 요청
