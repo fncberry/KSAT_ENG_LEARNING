@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactMarkdown from "react-markdown"; // react-markdown 추가
 import "./App.css"; // CSS 파일을 임포트
 
-function App() {
+function AppTest() {
   // 사용자 입력을 저장할 상태 변수 설정
   const [inputValue, setInputValue] = useState("");
   const [responseMessage, setResponseMessage] = useState(""); // 백엔드 응답 메시지 상태
@@ -27,7 +27,7 @@ function App() {
     setIsLoading(true); // 요청 시작 시 로딩 활성화
     setResponseMessage("");
     try {
-      const response = await fetch("http://localhost:5000/api", {
+      const response = await fetch("http://localhost:8080/api", {
         method: "POST", // POST 요청
         headers: {
           "Content-Type": "application/json", // JSON 형식으로 요청
